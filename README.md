@@ -9,9 +9,22 @@ A guide to develop intelligent apps with Azure OpenAI.
 - GPT: Short for Generative Pre-trained Transformer, is an advanced language model created by OpenAI. It’s designed to understand and generate human-like text based on extensive training with large amounts of data.
 - Embeddings: An embedding model takes chunks of text and transforms them into vectors—essentially, numerical representations. These vectors encode the semantic meaning of the input text and are always of the same length, regardless of how long the original text is1. Here are some key points about the text-embedding-ada-002 model.
 
+Azure OpenAI Service provides access to a diverse set of powerful language models, including the latest GPT-4 and GPT-3.5 Turbo, as well as the Embeddings model series.
+
 #### Calling a model
 
+The GPT and embedding models REST API exposed over an endpoint. To access these endpoints you need to either obtain an API Key or configure AAD credentials. These REST endpoints can also be locked with Azure private endpoints.
+
 #### REST
+
+Curl example:
+
+```bash
+curl https://YOUR_RESOURCE_NAME.openai.azure.com/openai/deployments/YOUR_DEPLOYMENT_NAME/chat/completions?api-version=2024-02-01 \
+  -H "Content-Type: application/json" \
+  -H "api-key: YOUR_API_KEY" \
+  -d '{"messages":[{"role": "system", "content": "You are a helpful assistant."},{"role": "user", "content": "Does Azure OpenAI support customer managed keys?"},{"role": "assistant", "content": "Yes, customer managed keys are supported by Azure OpenAI."},{"role": "user", "content": "Do other Azure AI services support this too?"}]}'
+```
 
 #### Model internals
 
