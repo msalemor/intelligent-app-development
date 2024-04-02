@@ -26,11 +26,14 @@ curl https://YOUR_RESOURCE_NAME.openai.azure.com/openai/deployments/YOUR_DEPLOYM
   -d '{"messages":[{"role": "system", "content": "You are a helpful assistant."},{"role": "user", "content": "Does Azure OpenAI support customer managed keys?"},{"role": "assistant", "content": "Yes, customer managed keys are supported by Azure OpenAI."},{"role": "user", "content": "Do other Azure AI services support this too?"}]}'
 ```
 
-#### Model internals
-
 ### Tokens
 
 What is a token? A token is 75% of an English word or 100 English words are equivalent to 100 tokens. In other languages, special characters are considered tokens, and token counts may increase.
+
+Different GPT and embedding models have different performance, throttling, and cost characteristig. Therefore, knowing what tokens are and managing is of key importance.
+
+Reference:
+- [OpenAI Tokenizer Tool](https://platform.openai.com/tokenizer)
 
 ### Prompt and Completion
 
