@@ -21,6 +21,15 @@ What is a token? A token is 75% of an English word or 100 English words are equi
 
 ### Prompt and Completion
 
+- Prompt:
+  - A prompt is a natural language request submitted to a language model to receive a response.
+  - It serves as the input that guides the model’s text generation process.
+
+- Completion:
+  - A completion is the model’s continuation of the input text provided in the prompt.
+  - It represents the generated output based on the context set by the prompt.
+  - Think of completions as the final strokes that refine and enhance the model’s response.
+
 ### Prompt Engineering
 
 Prompt engineering in generative AI refers to the deliberate design and formulation of input prompts to guide the behavior of language models during text generation. It involves crafting effective instructions or context that influence the model’s responses. Here are some key aspects of prompt engineering:
