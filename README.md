@@ -6,9 +6,14 @@ A guide to develop intelligent apps with Azure OpenAI.
 
 ### Models
 
-#### Model internals
+- GPT: Short for Generative Pre-trained Transformer, is an advanced language model created by OpenAI. It’s designed to understand and generate human-like text based on extensive training with large amounts of data.
+- Embeddings: An embedding model takes chunks of text and transforms them into vectors—essentially, numerical representations. These vectors encode the semantic meaning of the input text and are always of the same length, regardless of how long the original text is1. Here are some key points about the text-embedding-ada-002 model.
 
-### REST
+#### Calling a model
+
+#### REST
+
+#### Model internals
 
 ### Tokens
 
