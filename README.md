@@ -1,4 +1,4 @@
-# intelligent-app-development
+# Application Development with Azure OpenAI
 
 A guide to develop intelligent apps with Azure OpenAI.
 
